@@ -50,7 +50,7 @@ export const Hero: React.FC = () => {
       <div className="w-1/2 relative flex justify-end">
         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#FFD700] rounded-full blur-[150px] opacity-10"></div>
         <img 
-          src="2.png" 
+          src="2.jpg" 
           alt="Nihar Das Roy" 
           className="relative z-10 w-[550px] h-[750px] object-cover grayscale hover:grayscale-0 transition-all duration-700 rounded-2xl shadow-2xl border-b-8 border-r-8 border-[#FFD700]"
         />
@@ -65,7 +65,7 @@ export const About: React.FC = () => {
       <div className="flex gap-20 items-center">
         <div className="w-2/5 relative">
           <img 
-            src="1.png" 
+            src="1.jpg" 
             alt="About Nihar" 
             className="w-full h-[650px] object-cover rounded-xl"
           />
@@ -207,16 +207,19 @@ export const Portfolio: React.FC = () => {
         <h2 className="text-5xl font-black">Featured <span className="text-[#FFD700]">Projects</span></h2>
       </div>
       <div className="grid grid-cols-2 gap-10">
-       {[3, 4, 5, 6].map((p) => (
-  <div key={p} className="group relative overflow-hidden rounded-xl aspect-[16/10]">
-   <img
-  src={`/${p}.jpg`}
-  alt="Project"
-  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-/>
-
+   {[3, 4, 5, 6].map((p) => (
+  <div
+    key={p}
+    className="group relative overflow-hidden rounded-xl aspect-[16/10]"
+  >
+    <img
+      src={`/${p}.jpg`}
+      alt="Project"
+      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+    />
   </div>
 ))}
+
 
       </div>
     </section>
